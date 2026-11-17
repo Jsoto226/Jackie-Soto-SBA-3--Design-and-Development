@@ -39,3 +39,32 @@ h1, h2, h3, h4 {
         opacity: 0.75;
         color: var(--white)
     }
+
+    /* Hero Section */
+    .hero-section {
+        background-color: var(--grey-50);
+        position: relative;
+    }
+
+    .hero-images-wrapper {
+        background-image: url('./images/bg-intro-mobile.svg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        text-align: center;
+    }
+
+    /*Media query from desktop to phone*/
+    @media (min-width: 922px) {
+        .hero-images-wrapper {
+            background-image: url('./images/bg-intro-desktop.svg');
+            background-size: 135%;
+            background-position: -5% 65%;
+        }
+        .hero-mockups {
+            margin-top: -110px;
+            margin-bottom: -130px;
+            margin-bottom: -140px;
+        }
+    }
+    
